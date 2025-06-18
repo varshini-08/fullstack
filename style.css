@@ -1,0 +1,27 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: blanchedalmond;
+}
+
+h1 {
+    position: relative;
+    top: 150px;
+    left: 290px;
+    text-align: center;
+    color: #e01212;
+}
+
+h2{
+    text-align: center;
+    color: brown;
+}
+
+tr{
+    padding: left;
+    border: forestgreen;
+    border-radius: 30px;
+}

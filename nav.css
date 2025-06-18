@@ -1,0 +1,25 @@
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: brown;
+    color: rgb(173, 134, 210);
+    list-style: none;
+    height: 10vh;
+    align-items: center;
+}
+
+a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-decoration-line: none;
+    color: beige;
+}
+a:hover{
+    color: black;
+}
+@media (max-width:470px){
+    .nav{
+        display:flex;
+        flex-direction: column;
+    }
+}
