@@ -5,6 +5,7 @@ import { useState } from 'react'
 const Effect = () => {
     const [count, setCount] = useState(0)
     const [users,setUsers] = useState([])
+    const [posts,setPosts] = useState([])
     // useEffect(()=>{
     //     console.log("from useEffect");
     //     return ()=>{
@@ -16,6 +17,11 @@ const Effect = () => {
         .then((res)=>res.json())
         .then((data)=>setUsers(data))
     },[])
+    useEffect(()=>{
+        fetch('https://jsonplaceholder.typicode.com/posts')
+        .then((res)=>res.json())
+        .then((data)=>setPosts(data))
+    })
     console.log(users);
   return (
     <div>
@@ -28,6 +34,15 @@ const Effect = () => {
             ))
         }
     
+      </ul>
+      <ul>
+        {posts.map((post)=>(
+         <li key={post.id}>
+            <h2>{post.title}</h2>
+            <p>{post.body}</p>
+         </li>
+
+        ))}
       </ul>
     </div>
   )
