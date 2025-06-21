@@ -10,9 +10,11 @@ import Home from './Pages/Home'
 import About from './Pages/About';
 import Service from './Pages/Service';
 import State from './hooks/State'
-import Form from './hooks/form'; 
+import Form from './hooks/Form'; 
 import Effect from './hooks/Effect'
 import Reducer from './hooks/Reducer'
+import useForm from './hooks/Form';
+
 
 function App() {
   return (
