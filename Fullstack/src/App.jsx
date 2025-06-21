@@ -12,6 +12,7 @@ import Service from './Pages/Service';
 import State from './hooks/State'
 import Form from './hooks/form'; 
 import Effect from './hooks/Effect'
+import Reducer from './hooks/Reducer'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Route path='/state' element={<State/>}/>
       <Route path='/form' element={<Form/>}/>
       <Route path='/effect' element={<Effect/>}/>
+      <Route path='/reducer' element={<Reducer/>}/>
       </Routes>
 
     </>
